@@ -1,0 +1,16 @@
+.naitus-inline-icon {
+  color: #6E78AB;
+}
+
+.noticias__card a:hover .naitus-inline-icon,
+.info-interes__card:hover .naitus-inline-icon {
+  color: #007CFA;
+}
+
+.carousel__item--inner-link .naitus-inline-icon {
+  color: #FFF;
+}
+
+.carousel__item--inner-link:hover .naitus-inline-icon {
+  color: #CEE6FF;
+}

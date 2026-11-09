@@ -1,0 +1,44 @@
+.wp-pagenavi {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi .current {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.wp-pagenavi a.first,
+.wp-pagenavi a.last {
+  width: auto;
+  padding: 0 16px;
+  white-space: nowrap;
+}
+
+.wp-pagenavi .pages,
+.wp-pagenavi .extend {
+  line-height: 1.4;
+}
+
+.wp-pagenavi a:focus-visible {
+  outline: 2px solid #007CFA;
+  outline-offset: 3px;
+}
+
+@media (max-width: 575px) {
+  .wp-pagenavi {
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+  }
+}

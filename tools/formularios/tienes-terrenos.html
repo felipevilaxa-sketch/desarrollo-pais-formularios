@@ -1,0 +1,221 @@
+<div class="container form-banner">
+    <h1>¿Tienes un terreno disponible?</h1>
+    <p>Desarrollo País desarrolla proyectos de infraestructura por encargo de instituciones públicas: colegios, centros de salud, terminales, edificios institucionales, entre otros. Cuando uno de nuestros mandantes necesita suelo en una zona, revisamos los terrenos registrados aquí.</p>
+    <p>Si eres propietario, corredor, municipio o servicio público, puedes dejarnos los antecedentes de tu terreno. No necesitas tener un proyecto en mente.</p>
+</div>
+
+<div class="container formulario">
+  <div class="col-form px-0">
+    <div id="bloque-formulario">
+
+      <div class="tarjeta intro">
+        <h2>Para qué tipo de proyectos podría servir</h2>
+        <p>No hay una superficie mínima única: depende del uso. Lo que sí necesitamos es claridad sobre
+           la ubicación y qué se puede construir según el plan regulador.</p>
+        <ul>
+          <li><b>Equipamiento público:</b> colegios, centros de salud, cuarteles, edificios institucionales.</li>
+          <li><b>Transporte y movilidad:</b> terminales de pasajeros, depósitos de buses, estacionamientos.</li>
+          <li><b>Infraestructura digital:</b> data centers, nodos de fibra óptica, torres.</li>
+          <li><b>Regeneración urbana:</b> paños con potencial de renovación en zonas consolidadas.</li>
+        </ul>
+      </div>
+
+      <div class="aviso">
+        <span class="ico" aria-hidden="true"><i class="fa-solid fa-circle-info"></i></span>
+        <div>Este registro <b>no constituye una oferta ni un compromiso de compra, arriendo u otro acuerdo</b>.
+        Te contactaremos solo si tu terreno se relaciona con un requerimiento concreto de alguno de nuestros
+        mandantes. Cualquier eventual negociación seguirá los procedimientos de Desarrollo País y del organismo
+        público correspondiente.</div>
+      </div>
+
+      <form class="tarjeta form-dp" novalidate>
+
+        <!-- 1. Quién registra -->
+        <fieldset class="seccion">
+          <legend class="seccion-tit"><span class="paso">1</span><h3>Quién registra el terreno</h3></legend>
+          <p class="ayuda-sec">Necesitamos saber en qué calidad nos contactas para dirigir la revisión.</p>
+
+          <div class="campos">
+            <div class="campo ancho">
+              <label for="rel_propiedad">Relación con la propiedad <span class="req">*</span></label>
+              <select id="rel_propiedad" name="rel_propiedad" required>
+                <option value="">Selecciona</option>
+                <option>Dueño único</option>
+                <option>Copropietario</option>
+                <option>Comunidad hereditaria</option>
+                <option>Mandatario o corredor con poder vigente</option>
+                <option>Representante legal de una empresa</option>
+                <option>Municipio o servicio público</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="contacto">Nombre de contacto <span class="req">*</span></label>
+              <input type="text" id="contacto" name="contacto" required>
+            </div>
+            <div class="campo">
+              <label for="entidad">Empresa o institución <span class="opc">(si corresponde)</span></label>
+              <input type="text" id="entidad" name="entidad">
+            </div>
+            <div class="campo">
+              <label for="email_of">Correo electrónico <span class="req">*</span></label>
+              <input type="email" id="email_of" name="email_of" required>
+            </div>
+            <div class="campo">
+              <label for="tel_of">Teléfono <span class="req">*</span></label>
+              <input type="tel" id="tel_of" name="tel_of" required placeholder="+56 9 1234 5678">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 2. Ubicación -->
+        <fieldset class="seccion">
+          <legend class="seccion-tit"><span class="paso">2</span><h3>Ubicación del terreno</h3></legend>
+          <p class="ayuda-sec">La región y la comuna determinan la carpeta donde se archiva el antecedente.</p>
+          <div class="campos">
+            <div class="campo">
+              <label for="region_t">Región <span class="req">*</span></label>
+              <select id="region_t" name="region_t" required>
+                <option value="">Selecciona una región</option>
+                <option>Arica y Parinacota</option><option>Tarapacá</option><option>Antofagasta</option>
+                <option>Atacama</option><option>Coquimbo</option><option>Valparaíso</option>
+                <option>Metropolitana de Santiago</option><option>Libertador General Bernardo O'Higgins</option>
+                <option>Maule</option><option>Ñuble</option><option>Biobío</option><option>La Araucanía</option>
+                <option>Los Ríos</option><option>Los Lagos</option><option>Aysén</option>
+                <option>Magallanes y de la Antártica Chilena</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="comuna_t">Comuna <span class="req">*</span></label>
+              <input type="text" id="comuna_t" name="comuna_t" required>
+            </div>
+            <div class="campo ancho">
+              <label for="direccion">Dirección o referencia <span class="req">*</span></label>
+              <input type="text" id="direccion" name="direccion" required placeholder="Calle, número, kilómetro o referencia del sector">
+            </div>
+            <div class="campo">
+              <label for="rol">Rol de avalúo SII <span class="opc">(opcional)</span></label>
+              <input type="text" id="rol" name="rol" placeholder="1234-56">
+              <span class="pista">Nos permite verificar la inscripción del terreno sin pedirte más documentos.</span>
+            </div>
+            <div class="campo">
+              <label for="mapa">Enlace a Google Maps o coordenadas <span class="opc">(opcional)</span></label>
+              <input type="text" id="mapa" name="mapa" placeholder="-33.4269, -70.6110">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 3. Características -->
+        <fieldset class="seccion">
+          <legend class="seccion-tit"><span class="paso">3</span><h3>Características del terreno</h3></legend>
+          <div class="campos">
+            <div class="campo">
+              <label for="superficie">Superficie <span class="req">*</span></label>
+              <input type="number" id="superficie" name="superficie" required min="1" step="any" placeholder="Ej: 4500">
+            </div>
+            <div class="campo">
+              <label for="unidad">Unidad <span class="req">*</span></label>
+              <select id="unidad" name="unidad" required>
+                <option value="m2">Metros cuadrados (m²)</option>
+                <option value="ha">Hectáreas (ha)</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="uso_suelo">Uso de suelo según plan regulador <span class="req">*</span></label>
+              <select id="uso_suelo" name="uso_suelo" required>
+                <option value="">Selecciona</option>
+                <option>Habitacional</option><option>Equipamiento</option><option>Actividades productivas</option>
+                <option>Mixto</option><option>Área verde o restricción</option><option>No lo sé</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="construcciones">¿Tiene construcciones? <span class="req">*</span></label>
+              <select id="construcciones" name="construcciones" required>
+                <option value="">Selecciona</option>
+                <option>Sitio eriazo, sin construcciones</option>
+                <option>Con construcciones en uso</option>
+                <option>Con construcciones en desuso o a demoler</option>
+              </select>
+            </div>
+            <div class="campo ancho">
+              <label>Servicios disponibles <span class="opc">(marca lo que aplique)</span></label>
+              <div class="lista-check">
+                <label class="check"><input type="checkbox" name="servicios" value="Agua potable"> Agua potable</label>
+                <label class="check"><input type="checkbox" name="servicios" value="Alcantarillado"> Alcantarillado</label>
+                <label class="check"><input type="checkbox" name="servicios" value="Electricidad"> Electricidad</label>
+                <label class="check"><input type="checkbox" name="servicios" value="Gas"> Gas</label>
+                <label class="check"><input type="checkbox" name="servicios" value="Fibra optica"> Fibra óptica</label>
+                <label class="check"><input type="checkbox" name="servicios" value="Transporte publico cercano"> Transporte público cercano</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 4. Antecedentes y fotos -->
+        <fieldset class="seccion">
+          <legend class="seccion-tit"><span class="paso">4</span><h3>Antecedentes y fotos</h3></legend>
+          <p class="ayuda-sec">Nada es obligatorio. Si los tienes, nos ayudan a revisar mejor el terreno cuando surja un requerimiento.</p>
+
+          <div class="campo ancho" style="margin-bottom:20px">
+            <label for="fotos">Fotografías del terreno <span class="opc">(opcional)</span></label>
+            <div class="dropzone" data-max="15">
+              <input type="file" id="fotos" name="fotos" accept=".jpg,.jpeg,.png,.heic" multiple>
+              <strong>Arrastra aquí las fotos</strong>
+              <small>JPG o PNG · hasta 8 fotos · máximo 15 MB en total</small>
+            </div>
+            <ul class="archivos" data-archivos="fotos"></ul>
+          </div>
+
+          <div class="campo ancho" style="margin-bottom:18px">
+            <label for="docs_t">Documentos legales y técnicos <span class="opc">(opcional)</span></label>
+            <div class="dropzone" data-max="20">
+              <input type="file" id="docs_t" name="docs_t" accept=".pdf,.dwg,.kmz,.jpg,.png" multiple>
+              <strong>Arrastra aquí los documentos</strong>
+              <small>PDF, DWG o KMZ · máximo 20 MB en total</small>
+            </div>
+            <ul class="archivos" data-archivos="docs_t"></ul>
+          </div>
+
+          <div class="campo ancho">
+            <label>¿Qué documentos estás adjuntando? <span class="opc">(nos ayuda a revisar)</span></label>
+            <div class="lista-check">
+              <label class="check"><input type="checkbox" name="docs_tipo" value="Certificado de dominio vigente"> Certificado de dominio vigente</label>
+              <label class="check"><input type="checkbox" name="docs_tipo" value="Certificado de informaciones previas"> Certificado de informaciones previas</label>
+              <label class="check"><input type="checkbox" name="docs_tipo" value="Plano o loteo"> Plano, loteo o croquis</label>
+              <label class="check"><input type="checkbox" name="docs_tipo" value="Tasacion"> Tasación</label>
+              <label class="check"><input type="checkbox" name="docs_tipo" value="Estudio de titulos"> Estudio de títulos</label>
+              <label class="check"><input type="checkbox" name="docs_tipo" value="Ninguno por ahora"> Ninguno por ahora</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 5. Declaraciones -->
+        <fieldset class="seccion">
+          <legend class="seccion-tit"><span class="paso">5</span><h3>Declaraciones</h3></legend>
+          <div class="lista-check --una-col">
+            <label class="check"><input type="checkbox" name="veracidad_t" required>
+              Declaro que la información entregada es veraz y que estoy facultado para registrar este terreno. <span class="req">*</span></label>
+            <!-- PENDIENTE LEGAL: la Ley 21.719 reemplaza a la 19.628 desde diciembre de 2026. -->
+            <label class="check"><input type="checkbox" name="datos_t" required>
+              Autorizo el tratamiento de mis datos de contacto para registrar el terreno y contactarme si se relaciona con un requerimiento, conforme a la Ley N° 19.628. <span class="req">*</span></label>
+            <label class="check"><input type="checkbox" name="visita">
+              Autorizo que, si fuera necesario, el equipo de Desarrollo País coordine una visita al terreno.</label>
+          </div>
+        </fieldset>
+
+        <div class="acciones">
+          <button class="dp-btn" type="submit">Registrar terreno</button>
+          <button class="dp-btn-limpiar" type="reset">Limpiar formulario</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Confirmación -->
+    <div class="tarjeta exito" id="bloque-exito">
+      <div class="tick" aria-hidden="true">✓</div>
+      <h2>Gracias, el terreno quedó registrado</h2>
+      <p>Revisamos estos antecedentes cuando alguno de nuestros mandantes requiere suelo en la zona. Si tu terreno
+         pudiera servir, te contactaremos para solicitar más información.</p>
+      <button class="dp-btn --sec" id="btn-otro" type="button">Registrar otro terreno</button>
+    </div>
+  </div>
+</div>

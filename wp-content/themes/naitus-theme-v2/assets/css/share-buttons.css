@@ -1,0 +1,41 @@
+.naitus-share {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+    color: #6e78ab;
+    font-size: 16px;
+}
+
+.naitus-share__label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.naitus-share__label i { font-size: 20px; }
+
+.naitus-share .naitus-share__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #cce4ff;
+    color: #364474;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.naitus-share .naitus-share__link:hover {
+    background: #6e78ab;
+    color: #fff;
+}
+
+.naitus-share .naitus-share__link:focus-visible {
+    outline: 2px solid #364474;
+    outline-offset: 3px;
+}

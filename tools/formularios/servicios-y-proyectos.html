@@ -1,0 +1,320 @@
+<div class="container form-banner">
+    <h1>Registra tus servicios o antecedentes de proyecto</h1>
+    <p>Desarrollo País trabaja por encargo de instituciones públicas, como ministerios, servicios y otros organismos del Estado, que definen los proyectos que necesitan. Nosotros los estructuramos y contratamos su ejecución a través de llamados de licitación abiertos.</p>
+    <p>Por eso, este canal no es un concurso ni una convocatoria de ideas: es un registro. Lo que nos envíes queda archivado y lo revisamos al preparar nuevos procesos. Si tu experiencia o tus antecedentes se relacionan con alguno, podríamos contactarte para invitarte a participar cuando se abra la licitación correspondiente.</p>
+</div>
+
+<div class="container formulario">
+  <div class="col-form px-0">
+    <div id="bloque-formulario">
+
+      <div class="aviso">
+        <span class="ico" aria-hidden="true"><i class="fa-solid fa-circle-exclamation"></i></span>
+        <div><b>Este registro no es una postulación.</b> No constituye una oferta ni otorga preferencia en ningún
+        proceso. Nuestras licitaciones se publican en
+        <a href="../informacion-de-interes/index.html">Convocatorias</a> y se adjudican según sus bases, en igualdad
+        de condiciones para todos los participantes. Por el volumen de registros, no siempre podremos responder a cada uno.</div>
+      </div>
+
+      <div class="tarjeta intro">
+        <h2>Qué puedes registrar</h2>
+        <ul>
+          <li><b>Servicios especializados:</b> ingeniería, construcción, inspección técnica, asesorías, tecnología o estudios que podrían requerirse en futuras licitaciones.</li>
+          <li><b>Antecedentes de un proyecto:</b> estudios, diseños o iniciativas de infraestructura que puedan servir como referencia. Ten presente que los proyectos que desarrollamos nacen de los requerimientos de nuestros mandantes.</li>
+          <li><b>Interés en invertir o asociarse:</b> si representas a una empresa o inversionista interesado en participar en proyectos de infraestructura pública.</li>
+        </ul>
+      </div>
+
+      <form class="tarjeta form-dp" novalidate>
+
+        <!-- 1. Qué quieres registrar -->
+        <fieldset class="seccion">
+          <legend class="seccion-tit"><span class="paso">1</span><h3>¿Qué quieres registrar?</h3></legend>
+          <p class="ayuda-sec">Según lo que elijas, te pediremos distinta información.</p>
+          <div class="opciones">
+            <label class="opcion"><input type="radio" name="tipo" value="Proyecto" required>
+              <span><strong>Antecedentes de un proyecto</strong><small>Tenemos una iniciativa, estudio o diseño que puede servir de referencia.</small></span></label>
+            <label class="opcion"><input type="radio" name="tipo" value="Servicio">
+              <span><strong>Servicios de mi empresa</strong><small>Prestamos servicios que podrían requerirse en futuras licitaciones.</small></span></label>
+            <label class="opcion"><input type="radio" name="tipo" value="Alianza">
+              <span><strong>Interés en invertir o asociarse</strong><small>Queremos participar como inversionistas o socios en proyectos públicos.</small></span></label>
+          </div>
+        </fieldset>
+
+        <!-- 2. Quién presenta -->
+        <fieldset class="seccion">
+          <legend class="seccion-tit"><span class="paso">2</span><h3>Quién presenta</h3></legend>
+          <div class="campos">
+            <div class="campo">
+              <label for="razon">Razón social o nombre <span class="req">*</span></label>
+              <input type="text" id="razon" name="razon" required>
+            </div>
+            <div class="campo">
+              <label for="rut_e">RUT <span class="req">*</span></label>
+              <input type="text" id="rut_e" name="rut_e" required placeholder="76.543.210-K">
+            </div>
+            <div class="campo">
+              <label for="giro">Giro o actividad principal <span class="opc">(opcional)</span></label>
+              <input type="text" id="giro" name="giro">
+            </div>
+            <div class="campo">
+              <label for="web">Sitio web <span class="opc">(opcional)</span></label>
+              <input type="url" id="web" name="web" placeholder="https://">
+            </div>
+            <div class="campo">
+              <label for="antiguedad">Años de operación <span class="req">*</span></label>
+              <select id="antiguedad" name="antiguedad" required>
+                <option value="">Selecciona</option>
+                <option>Menos de 2 años</option><option>2 a 5 años</option>
+                <option>6 a 10 años</option><option>Más de 10 años</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="pais">País <span class="req">*</span></label>
+              <select id="pais" name="pais" required>
+                <option value="Chile" selected>Chile</option>
+                <option>Argentina</option><option>Bolivia</option><option>Brasil</option><option>Colombia</option>
+                <option>España</option><option>Estados Unidos</option><option>México</option><option>Perú</option>
+                <option>Uruguay</option><option>Otro país</option>
+              </select>
+            </div>
+            <div class="campo" data-ver-si="pais=Chile">
+              <label for="region_e">Región de la casa matriz <span class="req">*</span></label>
+              <select id="region_e" name="region_e" data-req="1">
+                <option value="">Selecciona una región</option>
+                <option>Arica y Parinacota</option><option>Tarapacá</option><option>Antofagasta</option>
+                <option>Atacama</option><option>Coquimbo</option><option>Valparaíso</option>
+                <option>Metropolitana de Santiago</option><option>Libertador General Bernardo O'Higgins</option>
+                <option>Maule</option><option>Ñuble</option><option>Biobío</option><option>La Araucanía</option>
+                <option>Los Ríos</option><option>Los Lagos</option><option>Aysén</option>
+                <option>Magallanes y de la Antártica Chilena</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="ciudad">Ciudad <span class="req">*</span></label>
+              <input type="text" id="ciudad" name="ciudad" required placeholder="Santiago, Concepción, Madrid…">
+            </div>
+            <div class="campo">
+              <label for="contacto_e">Nombre del contacto <span class="req">*</span></label>
+              <input type="text" id="contacto_e" name="contacto_e" required>
+            </div>
+            <div class="campo">
+              <label for="cargo_e">Cargo <span class="req">*</span></label>
+              <input type="text" id="cargo_e" name="cargo_e" required>
+            </div>
+            <div class="campo">
+              <label for="email_e">Correo electrónico <span class="req">*</span></label>
+              <input type="email" id="email_e" name="email_e" required>
+            </div>
+            <div class="campo">
+              <label for="tel_e">Teléfono <span class="req">*</span></label>
+              <input type="tel" id="tel_e" name="tel_e" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 3. Aviso mientras no se elige una opción en el paso 1 -->
+        <div data-ver-si="tipo=">
+          <fieldset class="seccion">
+            <legend class="seccion-tit"><span class="paso">3</span><h3>Tu proyecto o tus servicios</h3></legend>
+            <div class="paso-pendiente">
+              <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+              Elige en el paso 1 qué quieres registrar y aquí aparecerán las preguntas que corresponden.
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- 3A. Proyecto / Inversión -->
+        <div data-ver-si="tipo=Proyecto|Alianza">
+          <fieldset class="seccion">
+            <legend class="seccion-tit"><span class="paso">3</span><h3>Tu proyecto</h3></legend>
+            <p class="ayuda-sec">Esta información nos ayuda a clasificar y archivar tus antecedentes.</p>
+            <div class="campos">
+              <div class="campo ancho">
+                <label for="nombre_p">Nombre de la iniciativa <span class="req">*</span></label>
+                <input type="text" id="nombre_p" name="nombre_p" data-req="1" placeholder="Ej: Terminal intermodal de Chillán">
+              </div>
+              <div class="campo">
+                <label for="linea">Línea de proyecto <span class="req">*</span></label>
+                <select id="linea" name="linea" data-req="1">
+                  <option value="">Selecciona</option>
+                  <option>Proyectos de Ciudad</option>
+                  <option>Proyectos Digitales</option>
+                  <option>Transporte y Movilidad</option>
+                  <option>Equipamiento Público</option>
+                  <option>Energía y Sostenibilidad</option>
+                  <option>Otros Proyectos</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="region_p">Región de emplazamiento <span class="req">*</span></label>
+                <select id="region_p" name="region_p" data-req="1">
+                  <option value="">Selecciona una región</option>
+                  <option>Arica y Parinacota</option><option>Tarapacá</option><option>Antofagasta</option>
+                  <option>Atacama</option><option>Coquimbo</option><option>Valparaíso</option>
+                  <option>Metropolitana de Santiago</option><option>Libertador General Bernardo O'Higgins</option>
+                  <option>Maule</option><option>Ñuble</option><option>Biobío</option><option>La Araucanía</option>
+                  <option>Los Ríos</option><option>Los Lagos</option><option>Aysén</option>
+                  <option>Magallanes y de la Antártica Chilena</option><option>Multirregional</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="etapa">Etapa de desarrollo <span class="req">*</span></label>
+                <select id="etapa" name="etapa" data-req="1">
+                  <option value="">Selecciona</option>
+                  <option>Idea o concepto</option>
+                  <option>Perfil o prefactibilidad</option>
+                  <option>Factibilidad</option>
+                  <option>Diseño en desarrollo</option>
+                  <option>Diseño terminado</option>
+                  <option>Con permisos aprobados</option>
+                  <option>Listo para ejecución</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="monto">Inversión estimada <span class="req">*</span></label>
+                <select id="monto" name="monto" data-req="1">
+                  <option value="">Selecciona</option>
+                  <option>Menos de UF 10.000</option><option>UF 10.000 a 50.000</option>
+                  <option>UF 50.000 a 200.000</option><option>UF 200.000 a 1.000.000</option>
+                  <option>Más de UF 1.000.000</option><option>Aún no estimada</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="plazo">Plazo estimado de ejecución <span class="req">*</span></label>
+                <select id="plazo" name="plazo" data-req="1">
+                  <option value="">Selecciona</option>
+                  <option>Menos de 1 año</option><option>1 a 3 años</option>
+                  <option>3 a 5 años</option><option>Más de 5 años</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="modelo">Modelo de negocio que imaginas (referencial) <span class="req">*</span></label>
+                <select id="modelo" name="modelo" data-req="1">
+                  <option value="">Selecciona</option>
+                  <option>Concesión</option>
+                  <option>Asociación público-privada (APP)</option>
+                  <option>Sociedad conjunta</option>
+                  <option>Contrato de obra o servicios</option>
+                  <option>Arriendo de largo plazo</option>
+                  <option>Aporte de terreno o activo</option>
+                  <option>Abierto a definir</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="terreno_p">Situación del terreno <span class="req">*</span></label>
+                <select id="terreno_p" name="terreno_p" data-req="1">
+                  <option value="">Selecciona</option>
+                  <option>Cuento con el terreno</option>
+                  <option>El terreno es de un tercero con acuerdo</option>
+                  <option>Se requiere terreno</option>
+                  <option>El terreno sería aportado por el Estado o el municipio</option>
+                  <option>No aplica</option>
+                </select>
+              </div>
+              <div class="campo ancho">
+                <label for="descripcion_p">Descripción del proyecto <span class="req">*</span></label>
+                <textarea id="descripcion_p" name="descripcion_p" data-req="1" maxlength="1500"
+                  placeholder="Qué problema resuelve, dónde se emplaza, qué se construye y cuál es el modelo. Máximo 1.500 caracteres."></textarea>
+                <span class="contador" data-contador="descripcion_p"></span>
+              </div>
+              <div class="campo ancho">
+                <label for="impacto">Impacto esperado y beneficiarios <span class="opc">(opcional)</span></label>
+                <textarea id="impacto" name="impacto" maxlength="600" style="min-height:90px"
+                  placeholder="Población beneficiada, empleos, efecto urbano o social."></textarea>
+                <span class="contador" data-contador="impacto"></span>
+              </div>
+              <div class="campo ancho">
+                <label>Avances con los que ya cuentas <span class="opc">(marca lo que aplique)</span></label>
+                <div class="lista-check">
+                  <label class="check"><input type="checkbox" name="avances" value="Estudio de demanda"> Estudio de demanda o mercado</label>
+                  <label class="check"><input type="checkbox" name="avances" value="Anteproyecto"> Anteproyecto o diseño</label>
+                  <label class="check"><input type="checkbox" name="avances" value="Evaluacion economica"> Evaluación económica</label>
+                  <label class="check"><input type="checkbox" name="avances" value="Permisos ambientales"> Permisos o RCA</label>
+                  <label class="check"><input type="checkbox" name="avances" value="Acuerdo con municipio"> Acuerdo con municipio o servicio</label>
+                  <label class="check"><input type="checkbox" name="avances" value="Financiamiento comprometido"> Financiamiento comprometido</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- 3B. Servicios -->
+        <div data-ver-si="tipo=Servicio">
+          <fieldset class="seccion">
+            <legend class="seccion-tit"><span class="paso">3</span><h3>Tus servicios</h3></legend>
+            <div class="campos">
+              <div class="campo ancho">
+                <label for="cat_servicio">¿Qué servicios prestas? <span class="req">*</span></label>
+                <input type="text" id="cat_servicio" name="cat_servicio" data-req="1"
+                  placeholder="Ej: ingeniería estructural y revisión de diseño de obras públicas">
+                <span class="pista">En una línea, para poder ubicarte rápido en el registro.</span>
+              </div>
+              <div class="campo ancho">
+                <label for="descripcion_s">Descripción de los servicios y experiencia relevante <span class="req">*</span></label>
+                <textarea id="descripcion_s" name="descripcion_s" data-req="1" maxlength="1500"
+                  placeholder="Qué hacen, con qué equipo, y dos o tres proyectos comparables. Máximo 1.500 caracteres."></textarea>
+                <span class="contador" data-contador="descripcion_s"></span>
+              </div>
+              <div class="campo ancho">
+                <label for="exp_publico">Experiencia con el sector público <span class="req">*</span></label>
+                <select id="exp_publico" name="exp_publico" data-req="1">
+                  <option value="">Selecciona</option>
+                  <option>Sí, con contratos vigentes</option>
+                  <option>Sí, con contratos anteriores</option>
+                  <option>No, sólo sector privado</option>
+                </select>
+              </div>
+              <div class="campo ancho">
+                <label>Certificaciones <span class="opc">(opcional)</span></label>
+                <div class="lista-check">
+                  <label class="check"><input type="checkbox" name="certificaciones" value="ISO 9001"> ISO 9001</label>
+                  <label class="check"><input type="checkbox" name="certificaciones" value="ISO 14001"> ISO 14001</label>
+                  <label class="check"><input type="checkbox" name="certificaciones" value="ISO 45001"> ISO 45001</label>
+                  <label class="check"><input type="checkbox" name="certificaciones" value="ISO 27001"> ISO 27001</label>
+                  <label class="check"><input type="checkbox" name="certificaciones" value="Registro MOP"> Registro de contratistas MOP</label>
+                  <label class="check"><input type="checkbox" name="certificaciones" value="Ninguna"> Ninguna</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- 4. Documentos -->
+        <fieldset class="seccion">
+          <legend class="seccion-tit"><span class="paso">4</span><h3>Documentos de respaldo</h3></legend>
+          <p class="ayuda-sec">Presentación, ficha del proyecto, brochure corporativo o lo que consideres necesario.</p>
+          <div class="campo ancho">
+            <label for="docs_p">Archivos <span class="opc">(opcional)</span></label>
+            <div class="dropzone" data-max="20">
+              <input type="file" id="docs_p" name="docs_p" accept=".pdf,.ppt,.pptx,.doc,.docx,.jpg,.png" multiple>
+              <strong>Arrastra aquí tus archivos</strong>
+              <small>PDF, PPT o DOC · hasta 5 archivos · máximo 20 MB en total</small>
+            </div>
+            <ul class="archivos" data-archivos="docs_p"></ul>
+          </div>
+        </fieldset>
+
+        <!-- PENDIENTE LEGAL: al eliminar Declaraciones se perdió la autorización de datos.
+             Texto informativo provisorio; confirmar si basta o si se requiere casilla. -->
+        <p class="nota-envio">Al enviar este registro autorizas a Desarrollo País a tratar tus datos de contacto para
+          archivar tus antecedentes y contactarte si se relacionan con alguna licitación.</p>
+
+        <div class="acciones">
+          <button class="dp-btn" type="submit">Enviar registro</button>
+          <button class="dp-btn-limpiar" type="reset">Limpiar formulario</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Confirmación -->
+    <div class="tarjeta exito" id="bloque-exito">
+      <div class="tick" aria-hidden="true">✓</div>
+      <h2>Gracias, tu registro quedó ingresado</h2>
+      <p>Revisamos estos antecedentes al preparar nuevos procesos. Si se relacionan con alguna licitación que vayamos
+         a abrir, podríamos contactarte para invitarte a participar. Te recomendamos revisar periódicamente nuestras
+         <a href="../informacion-de-interes/index.html">convocatorias vigentes</a>.</p>
+      <button class="dp-btn --sec" id="btn-otro" type="button">Registrar otros antecedentes</button>
+    </div>
+  </div>
+</div>
